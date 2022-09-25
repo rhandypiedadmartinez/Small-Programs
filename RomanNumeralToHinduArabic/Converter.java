@@ -20,7 +20,7 @@ public class Converter {
 
     public int convert(String romanNum){
         int equivalent = 0;
-        String regexComplete = "^(?:M*CM|M*(?:CD(?:XC|(?:XL(?:IX|(?:IV|V?I{0,3}))|L?(?:IX|X{0,3}(?:IV|V?I{0,3}))))|D?(?:C{0,3}XC(?:IX|(?:IV|V?I{0,3}))|C{0,3}(?:XL(?:IX|(?:IV|V?I{0,3}))|L?(?:IX|X{0,3}(?:IX|(?:IV|V?I{0,3})))))))$";
+        String regexComplete = "^(?:M*CM(?:CD(?:XC|(?:XL(?:IX|(?:IV|V?I{0,3}))|L?(?:IX|X{0,3}(?:IV|V?I{0,3}))))|D?(?:C{0,3}XC(?:IX|(?:IV|V?I{0,3}))|C{0,3}(?:XL(?:IX|(?:IV|V?I{0,3}))|L?(?:IX|X{0,3}(?:IX|(?:IV|V?I{0,3}))))))|M*(?:CD(?:XC(?:IX|(?:IV|V?I{0,3}))|(?:XL(?:IX|(?:IV|V?I{0,3}))|L?(?:IX|X{0,3}(?:IV|V?I{0,3}))))|D?(?:C{0,3}XC(?:IX|(?:IV|V?I{0,3}))|C{0,3}(?:XL(?:IX|(?:IV|V?I{0,3}))|L?(?:IX|X{0,3}(?:IX|(?:IV|V?I{0,3})))))))$";
 
         if (Pattern.matches(regexComplete,romanNum)==false){
             System.out.println("Format Must Follow Rules of Roman Numeration");
